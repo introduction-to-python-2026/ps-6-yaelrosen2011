@@ -1,11 +1,11 @@
 def create_codon_dict(file_path):
     pass # Replace the pass with your code
-    file=open(file_path)
-    rows=file.readlines()
+    file= open(file_path)
+    rows= file.readlines()
     file.close()
-    dic={}
+    dic= {}
     for row in rows:
-        cells=row.strip.split('\t')
+        cells=row.strip().split('\t')
         codon=cells[0]
         amino_acid=cells[2]
         dic[codon]=amino_acid
