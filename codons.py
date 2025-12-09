@@ -2,7 +2,7 @@ def create_codon_dict(file_path):
     pass # Replace the pass with your code
     file=open(file_path)
     rows=file.readlines()
-    file.close
+    file.close()
     dic={}
     for row in rows:
         cells=row.strip.split('\t')
